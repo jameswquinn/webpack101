@@ -3,614 +3,455 @@
   <head>
     <meta charset="UTF-8">
     <title>Project Demo</title>
-  <link href="app.css?61324d9d1fef4bd9ee1b" rel="stylesheet"></head>
+  <link href="app.css?28280ef6220421dace23" rel="stylesheet"></head>
   <body>
-    <!-- Primary Page Layout
-    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <div class="container">
-      <section class="header">
-        <h2 class="title">A dead simple, responsive boilerplate.</h2>
-        <a class="button button-primary" href="https://github.com/dhg/Skeleton/releases/download/2.0.4/Skeleton-2.0.4.zip" onClick="_gaq.push(['_trackEvent', 'skeleton', 'download'])">Download</a>
-        <div class="value-props row">
-          <div class="four columns value-prop">
-            <img class="value-img" src="images/feather.svg">
-            Light as a feather at ~400 lines &amp; built with mobile in mind.
-          </div>
-          <div class="four columns value-prop">
-            <img class="value-img" src="images/pens.svg">
-            Styles designed to be a starting point, not a UI framework.
-          </div>
-          <div class="four columns value-prop">
-            <img class="value-img" src="images/watch.svg">
-            Quick to start with zero compiling or installing necessary.
-          </div>
-        </div>
-      </section>
 
-      <div class="navbar-spacer"></div>
-      <nav class="navbar">
-        <div class="container">
-          <ul class="navbar-list">
-            <li class="navbar-item"><a class="navbar-link" href="#intro">Intro</a></li>
-            <li class="navbar-item">
-              <a class="navbar-link" href="#" data-popover="#codeNavPopover">Code</a>
-              <div id="codeNavPopover" class="popover">
-                <ul class="popover-list">
-                  <li class="popover-item">
-                    <a class="popover-link" href="#grid">Grid</a>
-                  </li>
-                  <li class="popover-item">
-                    <a class="popover-link" href="#typography">Typography</a>
-                  </li>
-                  <li class="popover-item">
-                    <a class="popover-link" href="#buttons">Buttons</a>
-                  </li>
-                  <li class="popover-item">
-                    <a class="popover-link" href="#forms">Forms</a>
-                  </li>
-                  <li class="popover-item">
-                    <a class="popover-link" href="#lists">Lists</a>
-                  </li>
-                  <li class="popover-item">
-                    <a class="popover-link" href="#code">Code</a>
-                  </li>
-                  <li class="popover-item">
-                    <a class="popover-link" href="#tables">Tables</a>
-                  </li>
-                  <li class="popover-item">
-                    <a class="popover-link" href="#queries">Queries</a>
-                  </li>
-                  <li class="popover-item">
-                    <a class="popover-link" href="#utilities">Utilities</a>
-                  </li>
-                </ul>
-              </div>
-            </li>
-            <li class="navbar-item"><a class="navbar-link" href="#examples">Examples</a></li>
-            <li class="navbar-item">
-              <a class="navbar-link" href="#" data-popover="#moreNavPopover">More</a>
-              <div id="moreNavPopover" class="popover">
-                <ul class="popover-list">
-                  <li class="popover-item">
-                    <a class="popover-link" href="https://github.com/dhg/Skeleton">On Github</a>
-                  </li>
-                  <li class="popover-item">
-                    <a class="popover-link" href="https://github.com/dhg/Skeleton#browser-support">Browsers</a>
-                  </li>
-                  <li class="popover-item">
-                    <a class="popover-link" href="https://github.com/dhg/Skeleton#license">License</a>
-                  </li>
-                  <li class="popover-item">
-                    <a class="popover-link" href="https://github.com/dhg/Skeleton#extensions">Extensions</a>
-                  </li>
-                  <li class="popover-item">
-                    <a class="popover-link" href="https://github.com/dhg/Skeleton/releases">Versions</a>
-                  </li>
-                  <li class="popover-item">
-                    <a class="popover-link" href="https://github.com/dhg/Skeleton#colophon">Colophon</a>
-                  </li>
-                </ul>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </nav>
-
-      <!-- Why use Skeleton -->
-      <div class="docs-section" id="intro">
-        <h6 class="docs-header">Is Skeleton for you?</h6>
-        <p>You should use Skeleton if you're embarking on a smaller project or just don't feel like you need all the utility of larger frameworks. Skeleton only styles a handful of standard HTML elements and includes a grid, but that's often more than enough to get started. In fact, <u>this site is built on Skeleton and has ~200 lines of custom CSS</u> (half of which is the docking navigation).</p>
-        <p>Love Skeleton and want to Tweet it, share it, or star it? Well, I appreciate that <3</p>
-        <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.getskeleton.com" data-text="Skeleton - A dead simple, responsive boilerplate." data-via="dhg" data-related="dhg">Tweet</a>
-        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-        <!-- <iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.getskeleton.com&amp;width&amp;layout=button_count&amp;action=like&amp;show_faces=false&amp;share=true&amp;height=21&amp;appId=151131931646052" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:21px; width:140px" allowTransparency="true"></iframe> -->
-        <iframe src="http://ghbtns.com/github-btn.html?user=dhg&repo=Skeleton&type=watch&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="110" height="20"></iframe>
-        <iframe src="http://ghbtns.com/github-btn.html?user=dhg&repo=Skeleton&type=fork&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="110" height="20"></iframe>
-      </div>
-
-      <!-- Grid -->
-      <div class="docs-section" id="grid">
-        <h6 class="docs-header">The grid</h6>
-        <p>The grid is a <u>12-column fluid grid with a max width of 960px</u>, that shrinks with the browser/device at smaller sizes. The max width can be changed with one line of CSS and all columns will resize accordingly. The syntax is simple and it makes coding responsive much easier. Go ahead, resize the browser. </p>
-        <div class="example-grid docs-example">
-          <div class="row">
-            <div class="one column">One</div>
-            <div class="eleven columns">Eleven</div>
-          </div>
-          <div class="row">
-            <div class="two columns">Two</div>
-            <div class="ten columns">Ten</div>
-          </div>
-          <div class="row">
-            <div class="three columns">Three</div>
-            <div class="nine columns">Nine</div>
-          </div>
-          <div class="row">
-            <div class="four columns">Four</div>
-            <div class="eight columns">Eight</div>
-          </div>
-          <div class="row">
-            <div class="five columns">Five</div>
-            <div class="seven columns">Seven</div>
-          </div>
-          <div class="row">
-            <div class="six columns">Six</div>
-            <div class="six columns">Six</div>
-          </div>
-          <div class="row">
-            <div class="seven columns">Seven</div>
-            <div class="five columns">Five</div>
-          </div>
-          <div class="row">
-            <div class="eight columns">Eight</div>
-            <div class="four  columns">Four</div>
-          </div>
-          <div class="row">
-            <div class="nine columns">Nine</div>
-            <div class="three columns">Three</div>
-          </div>
-          <div class="row">
-            <div class="ten columns">Ten</div>
-            <div class="two columns">Two</div>
-          </div>
-          <div class="row">
-            <div class="eleven columns">Eleven</div>
-            <div class="one column">One</div>
-          </div>
-        </div>
-
-
-  <!-- CODE EXAMPLE ———————————————————————————————————————— -->
-  <pre class="code-example">
-  <code class="code-example-body prettyprint"><!-- .container is main centered wrapper -->
-  <div class="container">
-
-    <!-- columns should be the immediate child of a .row -->
-    <div class="row">
-      <div class="one column">One</div>
-      <div class="eleven columns">Eleven</div>
-    </div>
-
-    <!-- just use a number and class 'column' or 'columns' -->
-    <div class="row">
-      <div class="two columns">Two</div>
-      <div class="ten columns">Ten</div>
-    </div>
-
-    <!-- there are a few shorthand columns widths as well -->
-    <div class="row">
-      <div class="one-third column">1/3</div>
-      <div class="two-thirds column">2/3</div>
-    </div>
-    <div class="row">
-      <div class="one-half column">1/2</div>
-      <div class="one-half column">1/2</div>
-    </div>
-
-  </div>
-
-  <!-- Note: columns can be nested, but it's not recommended since Skeleton's grid has %-based gutters, meaning a nested grid results in variable with gutters (which can end up being *really* small on certain browser/device sizes) -->
-  </code>
-  </pre>
-  <!-- ————————————————————————————————————————————————————— -->
-
-
-      </div>
-
-      <!-- Typography -->
-      <div class="docs-section" id="typography">
-        <h6 class="docs-header">Typography</h6>
-        <p>Type is all set with the <code>rems</code>, so font-sizes and spacial relationships can be responsively sized based on a single <code>&lt;html&gt;</code> font-size property. Out of the box, Skeleton never changes the <code>&lt;html&gt;</code> font-size, but it's there in case you need it for your project. All measurements are still base 10 though so, an <code>&lt;h1&gt;</code> with <code>5.0rem</code>font-size just means <code>50px</code>.</p>
-        <div class="docs-example">
-          <div class="row">
-            <div class="six columns">
-              <p><strong>The typography base</strong> is <a href="http://www.google.com/fonts/specimen/Raleway">Raleway</a> served by Google, set at 15rem (15px) over a 1.6 line height (24px). Other type basics like <a href="#">anchors</a>, <strong>strong</strong>, <em>emphasis</em>, and <u>underline</u> are all obviously included.</p>
-              <p><strong>Headings</strong> create a family of distinct sizes each with specific <code>letter-spacing</code>, <code>line-height</code>, and <code>margins</code>.</p>
-            </div>
-            <div class="six columns">
-              <h1>Heading<span class="heading-font-size"> <code>&lt;h1&gt;</code> 50rem</span></h1>
-              <h2>Heading<span class="heading-font-size"> <code>&lt;h2&gt;</code> 42rem</span></h2>
-              <h3>Heading<span class="heading-font-size"> <code>&lt;h3&gt;</code> 36rem</span></h3>
-              <h4>Heading<span class="heading-font-size"> <code>&lt;h4&gt;</code> 30rem</span></h4>
-              <h5>Heading<span class="heading-font-size"> <code>&lt;h5&gt;</code> 24rem</span></h5>
-              <h6>Heading<span class="heading-font-size"> <code>&lt;h6&gt;</code> 15rem</span></h6>
-            </div>
-          </div>
-        </div>
-
-
-  <!-- CODE EXAMPLE ———————————————————————————————————————— -->
-  <pre class="code-example">
-  <code class="code-example-body prettyprint"><!-- Standard Headings -->
-  <h1>Heading</h1>
-  <h2>Heading</h2>
-  <h3>Heading</h3>
-  <h4>Heading</h4>
-  <h5>Heading</h5>
-  <h6>Heading</h6>
-
-  <!-- Base type size -->
-  <p>The base type is 15px over 1.6 line height (24px)</p>
-
-  <!-- Other styled text tags -->
-  <strong>Bolded</strong>
-  <em>Italicized</em>
-  <a>Colored</a>
-  <u>Underlined</u>
-  </code>
-  </pre>
-  <!-- ————————————————————————————————————————————————————— -->
-
-
-      </div>
-
-      <!-- Buttons -->
-      <div class="docs-section" id="buttons">
-        <h6 class="docs-header">Buttons</h6>
-        <p>Buttons come in two basic flavors in Skeleton. The standard <code>&lt;button&gt;</code> element is plain, whereas the <code>.button-primary</code> button is vibrant and prominent. Button styles are applied to a number of appropriate form elements, but can also be arbitrarily attached to anchors with a <code>.button</code> class.</p>
-        <div class="docs-example">
-          <div>
-            <a class="button" href="#">Anchor button</a>
-            <button>Button element</button>
-            <input type="submit" value="submit input">
-            <input type="button" value="button input">
-          </div>
-          <div>
-            <a class="button button-primary" href="#">Anchor button</a>
-            <button class="button-primary">Button element</button>
-            <input class="button-primary" type="submit" value="submit input">
-            <input class="button-primary" type="button" value="button input">
-          </div>
-        </div>
-
-
-  <!-- CODE EXAMPLE ———————————————————————————————————————— -->
-  <pre class="code-example">
-  <code class="code-example-body prettyprint"><!-- Standard buttons -->
-  <a class="button" href="#">Anchor button</a>
-  <button>Button element</button>
-  <input type="submit" value="submit input">
-  <input type="button" value="button input">
-
-  <!-- Primary buttons -->
-  <a class="button button-primary" href="#">Anchor button</a>
-  <button class="button-primary">Button element</button>
-  <input class="button-primary" type="submit" value="submit input">
-  <input class="button-primary" type="button" value="button input">
-  </code>
-  </pre>
-  <!-- ————————————————————————————————————————————————————— -->
-
-
-      </div>
-
-      <!-- Forms -->
-      <div class="docs-section" id="forms">
-        <h6 class="docs-header">Forms</h6>
-        <p>Forms are a huge pain, but hopefully these styles make it a bit easier. All inputs, select, and buttons are normalized for a common height cross-browser so inputs can be stacked or placed alongside each other.</p>
-        <div class="docs-example docs-example-forms">
-          <form>
-            <div class="row">
-              <div class="six columns">
-                <label for="exampleEmailInput">Your email</label>
-                <input class="u-full-width" type="email" placeholder="test@mailbox.com" id="exampleEmailInput">
-              </div>
-              <div class="six columns">
-                <label for="exampleRecipientInput">Reason for contacting</label>
-                <select class="u-full-width" id="exampleRecipientInput">
-                  <option value="Option 1">Questions</option>
-                  <option value="Option 2">Admiration</option>
-                  <option value="Option 3">Can I get your number?</option>
-                </select>
-              </div>
-            </div>
-            <label for="exampleMessage">Message</label>
-            <textarea class="u-full-width" placeholder="Hi Dave &hellip;" id="exampleMessage"></textarea>
-            <label class="example-send-yourself-copy">
-              <input type="checkbox">
-              <span class="label-body">Send a copy to yourself</span>
-            </label>
-            <input class="button-primary" type="submit" value="Submit">
-          </form>
-        </div>
-
-
-  <!-- CODE EXAMPLE ———————————————————————————————————————— -->
-  <pre class="code-example">
-  <code class="code-example-body prettyprint"><!-- The above form looks like this -->
-  <form>
-    <div class="row">
-      <div class="six columns">
-        <label for="exampleEmailInput">Your email</label>
-        <input class="u-full-width" type="email" placeholder="test@mailbox.com" id="exampleEmailInput">
-      </div>
-      <div class="six columns">
-        <label for="exampleRecipientInput">Reason for contacting</label>
-        <select class="u-full-width" id="exampleRecipientInput">
-          <option value="Option 1">Questions</option>
-          <option value="Option 2">Admiration</option>
-          <option value="Option 3">Can I get your number?</option>
-        </select>
-      </div>
-    </div>
-    <label for="exampleMessage">Message</label>
-    <textarea class="u-full-width" placeholder="Hi Dave &hellip;" id="exampleMessage"></textarea>
-    <label class="example-send-yourself-copy">
-      <input type="checkbox">
-      <span class="label-body">Send a copy to yourself</span>
-    </label>
-    <input class="button-primary" type="submit" value="Submit">
-  </form>
-
-  <!-- Always wrap checkbox and radio inputs in a label and use a <span class="label-body"> inside of it -->
-
-  <!-- Note: The class .u-full-width is just a utility class shorthand for width: 100% -->
-  </code>
-  </pre>
-  <!-- ————————————————————————————————————————————————————— -->
-
-
-      </div>
-
-      <!-- Lists -->
-      <div class="docs-section" id="lists">
-        <h6 class="docs-header">Lists</h6>
-        <div class="row docs-example">
-          <div class="six columns">
-            <ul>
-              <li>Unordered lists have basic styles</li>
-              <li>
-                They use the circle list style
-                <ul>
-                  <li>Nested lists styled to feel right</li>
-                  <li>Can nest either type of list into the other</li>
-                </ul>
-              </li>
-              <li>Just more list items mama san</li>
-            </ul>
-          </div>
-          <div class="six columns">
-            <ol>
-              <li>Ordered lists also have basic styles</li>
-              <li>
-                They use the decimal list style
-                <ul>
-                  <li>Ordered and unordered can be nested</li>
-                  <li>Can nest either type of list into the other</li>
-                </ul>
-              </li>
-              <li>Last list item just for the fun</li>
-            </ol>
-          </div>
-        </div>
-
-
-  <!-- CODE EXAMPLE ———————————————————————————————————————— -->
-  <pre class="code-example">
-  <code class="code-example-body prettyprint"><ul>
-    <li>Item 1</li>
-    <li>
-      Item 2
-      <ul>
-        <li>Item 2.1</li>
-        <li>Item 2.2</li>
-      </ul>
-    </li>
-    <li>Item 3</li>
-  </ul>
-
-  <!-- Easily substitute any <ul> or an <ol> to get number lists or sublists. Skeleton doesn't support lists nested deeper than 2 levels -->
-  </code>
-  </pre>
-  <!-- ————————————————————————————————————————————————————— -->
-
-
-      </div>
-
-      <!-- Code -->
-      <div class="docs-section" id="code">
-        <h6 class="docs-header">Code</h6>
-        <p>Code styling is kept basic – just wrap anything in a <code>&lt;code&gt;</code> and it will appear like <code>this</code>. For blocks of code, wrap a <code>&lt;code&gt;</code> with a <code>&lt;pre&gt;</code>.</p>
-        <div class="docs-example">
-  <pre><code>.some-class {
-    background-color: red;
-  }</code></pre>
-        </div>
-
-
-  <!-- CODE EXAMPLE ———————————————————————————————————————— -->
-  <pre class="code-example">
-  <code class="code-example-body prettyprint"><pre><code>.some-class {
-    background-color: red;
-  }</code></pre>
-
-  <!-- Remember every whitespace and break will be preserved in a <pre>, including indentation in your code -->
-  </code>
-  </pre>
-  <!-- ————————————————————————————————————————————————————— -->
-
-
-      </div>
-
-      <!-- Tables -->
-      <div class="docs-section" id="tables">
-        <h6 class="docs-header">Tables</h6>
-        <p>Be sure to use properly formed table markup with <code>&lt;thead&gt;</code> and <code>&lt;tbody&gt;</code> when building a <code>table</code>.</p>
-        <div class="docs-example">
-          <table class="u-full-width">
-            <thead>
-              <tr>
-                <th>Name</th>
-                <th>Age</th>
-                <th>Sex</th>
-                <th>Location</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Dave Gamache</td>
-                <td>26</td>
-                <td>Male</td>
-                <td>San Francisco</td>
-              </tr>
-              <tr>
-                <td>Dwayne Johnson</td>
-                <td>42</td>
-                <td>Male</td>
-                <td>Hayward</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-
-
-  <!-- CODE EXAMPLE ———————————————————————————————————————— -->
-  <pre class="code-example">
-  <code class="code-example-body prettyprint"><table class="u-full-width">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Age</th>
-        <th>Sex</th>
-        <th>Location</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Dave Gamache</td>
-        <td>26</td>
-        <td>Male</td>
-        <td>San Francisco</td>
-      </tr>
-      <tr>
-        <td>Dwayne Johnson</td>
-        <td>42</td>
-        <td>Male</td>
-        <td>Hayward</td>
-      </tr>
-    </tbody>
-  </table>
-  </code>
-  </pre>
-  <!-- ————————————————————————————————————————————————————— -->
-
-
-      </div>
-
-      <!-- Queries -->
-      <div class="docs-section" id="queries">
-        <h6 class="docs-header">Media queries</h6>
-        <p>Skeleton uses media queries to serve its scalable grid, but also has a list of queries for convenience of styling your site across devices. The queries are mobile-first, meaning they target <code>min-width</code>. Mobile-first queries are how Skeleton's grid is built and is the preferrable method of organizing CSS. It means all styles outside of a query apply to all devices, then larger devices are targeted for enhancement. This prevents small devices from having to parse tons of unused CSS. The sizes for the queries are:</p>
-        <div class="docs-example row">
-          <div class="six columns">
-            <ul>
-              <li><strong>Desktop HD</strong>: 1200px</li>
-              <li><strong>Desktop</strong>: 1000px</li>
-              <li><strong>Tablet</strong>: 750px</li>
-            </ul>
-          </div>
-          <div class="six columns">
-            <ul>
-              <li><strong>Phablet</strong>: 550px</li>
-              <li><strong>Mobile</strong>: 400px</li>
-            </ul>
-          </div>
-        </div>
-
-
-  <!-- CODE EXAMPLE ———————————————————————————————————————— -->
-  <pre class="code-example">
-  <code class="code-example-body prettyprint">/* Mobile first queries */
-
-  /* Larger than mobile */
-  @media (min-width: 400px) {}
-
-  /* Larger than phablet */
-  @media (min-width: 550px) {}
-
-  /* Larger than tablet */
-  @media (min-width: 750px) {}
-
-  /* Larger than desktop */
-  @media (min-width: 1000px) {}
-
-  /* Larger than Desktop HD */
-  @media (min-width: 1200px) {}
-
-
-  </code>
-  </pre>
-  <!-- ————————————————————————————————————————————————————— -->
-
-
-      </div>
-
-
-      <!-- Utilities and Misc. -->
-      <div class="docs-section" id="utilities">
-        <h6 class="docs-header">Utilities</h6>
-        <p>Skeleton has a number of small utility classes that act as easy-to-use helpers. Sometimes it's better to use a utility class than create a whole new class just to float an element.</p>
-
-
-  <!-- CODE EXAMPLE ———————————————————————————————————————— -->
-  <pre class="code-example">
-  <code class="code-example-body prettyprint">/* Utility Classes */
-
-  /* Make element full width */
-  .u-full-width {
-    width: 100%;
-    box-sizing: border-box; }
-
-  /* Make sure elements don't run outside containers (great for images in columns) */
-  .u-max-full-width {
-    max-width: 100%;
-    box-sizing: border-box; }
-
-  /* Float either direction */
-  .u-pull-right {
-    float: right; }
-  .u-pull-left {
-    float: left; }
-
-  /* Clear a float */
-  .u-cf {
-    content: "";
-    display: table;
-    clear: both; }
-  </code>
-  </pre>
-  <!-- ————————————————————————————————————————————————————— -->
-
-
-      </div>
-
-      <!-- Examples -->
-      <div class="docs-section examples" id="examples">
-        <h6 class="docs-header">Examples</h6>
-        <div class="row example">
-          <a class="example-screenshot-wrapper" target="_blank" href="examples/landing">
-            <img class="example-screenshot" src="images/examples/landing.jpg">
-          </a>
-          <div class="one-half offset-by-one-half column">
-            <h6 class="example-header">Demo Landing Page</h6>
-            <p class="example-description">This template is an example of how easy it can be to create a landing page with just the Skeleton grid and a few custom styles. The entire demo is ~150 lines of CSS including comments (most of which is positioning the phones at the top).</p>
-            <a class="button" href="examples/landing" target="_blank">Demo</a>
-            <a class="button" href="https://github.com/dhg/Skeleton/tree/gh-pages/examples/landing" target="_blank">Source</a>
-          </div>
-        </div>
-        <div class="row example">
-          <div class="example-screenshot-wrapper">
-            <div class="example-screenshot coming-soon"></div>
-          </div>
-          <div class="one-half offset-by-one-half column">
-            <h6 class="example-header">More Coming Soon!</h6>
-            <p class="example-description">More examples will be added to help anyone get started or more familiar with how Skeleton works. The goal is education. If you're more interested in real, live examples of Skeleton sites, I'll be creating a "Built on Skeleton" list soon!</p>
-          </div>
-        </div>
-      </div>
-
-    </div>
-
-
-  <script type="text/javascript" src="app.bundle.js?61324d9d1fef4bd9ee1b"></script></body>
+      <!-- Primary Page Layout
+      –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+      <div class="py2">
+     <div class="txt--center">
+       <h1 class="h2">
+         Furtive<br>
+         <small class="small muted">A forward-thinking, CSS micro-framework (2.47kB gzipped).</small>
+       </h1>
+       <div class="my2">
+         <a href="https://github.com/johnotander/furtive.git" class="btn" title="Furtive source code">Github</a>
+       </div>
+     </div>
+   </div>
+   <div class="bg--off-white py2">
+     <section class="measure p2" id="why-furtive">
+       <h2>Why Furtive?</h2>
+       <p class="h4">
+         Furtive is <em>truly</em> mobile-first and nearly all dimensions are done in <code>rem</code>.
+         It also has a small footprint, cutting down on the bandwidth necessary for downloading CSS.
+         Furtive is intended to be just that, furtive. It's the perfect starting point to get your project
+         up and running.
+       </p>
+       <p class="h4">
+         Furtive remains lightweight because it doesn't preoccupy itself with older browsers. As
+         a result, Furtive can use cutting edge tech like <a href="http://caniuse.com/#search=flexbox">flexbox</a>,
+         <a href="http://caniuse.com/#search=svg">SVGs</a>, and limited vendor prefixing. It's also available in
+         SCSS, CSS, and comes with a gulpfile for customizing the build.
+       </p>
+     </section>
+   </div>
+   <div class="py2 bg--off-white" id="grid">
+     <div class="measure p2">
+       <h3>Responsive Grid System</h3>
+
+       <p class="h4">
+         Furtive comes with a responsive grid system based on <code>display: flex;</code>. There are 6 available columns,
+         however this is easy to customize since it's dynamically generated as part of the build process with
+         <a href="https://github.com/johnotander/rework-flex-grid">rework-flex-grid</a>.
+       </p>
+
+       <div class="grd bg--off-white brdr--white p2 small">
+         <div class="txt--center">
+           <code>&nbsp;.grd > .grd-row > .grd-row-col</code>
+         </div>
+         <div class="grd-row my1">
+           <div class="grd-row-col-1-6 bg--light-gray py1">
+             <code>&nbsp;.col-1</code>
+           </div>
+           <div class="grd-row-col-5-6 py1 bg--white">
+             <code>&nbsp;.col-5</code>
+           </div>
+         </div>
+         <div class="grd-row my1">
+           <div class="grd-row-col-2-6 bg--light-gray py1">
+             <code>&nbsp;.col-2</code>
+           </div>
+           <div class="grd-row-col-4-6 py1 bg--white">
+             <code>&nbsp;.col-4</code>
+           </div>
+         </div>
+         <div class="grd-row my1">
+           <div class="grd-row-col-3-6 bg--light-gray py1">
+             <code>&nbsp;.col-3</code>
+           </div>
+           <div class="grd-row-col-3-6 py1 bg--white">
+             <code>&nbsp;.col-3</code>
+           </div>
+         </div>
+         <div class="grd-row my1">
+           <div class="grd-row-col-4-6 bg--light-gray py1">
+             <code>&nbsp;.col-4</code>
+           </div>
+           <div class="grd-row-col-2-6 py1 bg--white">
+             <code>&nbsp;.col-2</code>
+           </div>
+         </div>
+         <div class="grd-row my1">
+           <div class="grd-row-col-5-6 bg--light-gray py1">
+             <code>&nbsp;.col-5</code>
+           </div>
+           <div class="grd-row-col-1-6 py1 bg--white">
+             <code>&nbsp;.col-1</code>
+           </div>
+         </div>
+         <div class="grd-row my1">
+           <div class="grd-row-col-6 bg--light-gray py1">
+             <code>&nbsp;.col-6</code>
+           </div>
+         </div>
+
+         <div class="grd-row txt--center">
+             <p>Use classes ending in <code>--sm</code>, <code>--md</code>, and <code>--lg</code> to make columns that can stack on viewports with different widths. Try resizing the browser to see the effect on the columns&nbsp;below. </p>
+         </div>
+
+         <!-- md column examples -->
+         <div class="grd-row my1">
+           <div class="grd-row-col-2-6--md bg--light-gray py1">
+             <code>&nbsp;.col-2-6--md</code>
+           </div>
+           <div class="grd-row-col-4-6--md py1 bg--white">
+             <code>&nbsp;.col-4-6--md</code>
+           </div>
+         </div>
+         <div class="grd-row my1">
+           <div class="grd-row-col-3-6--md bg--light-gray py1">
+             <code>&nbsp;.col-3-6--md</code>
+           </div>
+           <div class="grd-row-col-3-6--md py1 bg--white">
+             <code>&nbsp;.col-3-6--md</code>
+           </div>
+         </div>
+         <div class="grd-row my1">
+           <div class="grd-row-col-4-6--md bg--light-gray py1">
+             <code>&nbsp;.col-4-6--md</code>
+           </div>
+           <div class="grd-row-col-2-6--md py1 bg--white">
+             <code>&nbsp;.col-2-6--md</code>
+           </div>
+         </div>
+         <!-- end examples -->
+
+         <!-- lg column examples -->
+
+         <div class="grd-row my1">
+           <div class="grd-row-col-2-6--lg bg--light-gray py1">
+             <code>&nbsp;.col-2-6--lg</code>
+           </div>
+           <div class="grd-row-col-4-6--lg py1 bg--white">
+             <code>&nbsp;.col-4-6--lg</code>
+           </div>
+         </div>
+         <div class="grd-row my1">
+           <div class="grd-row-col-3-6--lg bg--light-gray py1">
+             <code>&nbsp;.col-3-6--lg</code>
+           </div>
+           <div class="grd-row-col-3-6--lg py1 bg--white">
+             <code>&nbsp;.col-3-6--lg</code>
+           </div>
+         </div>
+         <div class="grd-row my1">
+           <div class="grd-row-col-4-6--lg bg--light-gray py1">
+             <code>&nbsp;.col-4-6--lg</code>
+           </div>
+           <div class="grd-row-col-2-6--lg py1 bg--white">
+             <code>&nbsp;.col-2-6--lg</code>
+           </div>
+         </div>
+       </div>
+     </div>
+   </div>
+   <section class="measure p2" id="buttons">
+     <h3>Buttons</h3>
+     <p class="h4">
+       There are only a few buttons included, to keep the footprint small. However, the <code>.btn</code>
+       class can be extended to add custom colors and styling.
+     </p>
+
+     <a href="#!" class="w100--s my1 btn" title="Furtive button example">.btn</a>
+     <a href="#!" class="w100--s my1 btn--blue" title="Furtive button example">.btn--blue</a>
+     <a href="#!" class="w100--s my1 btn--green" title="Furtive button example">.btn--green</a>
+     <a href="#!" class="w100--s my1 btn--red" title="Furtive button example">.btn--red</a>
+     <a href="#!" class="w100--s my1 btn--gray" title="Furtive button example">.btn--gray</a>
+     <a href="#!" class="w100--s my1 btn--link" title="Furtive button example">.btn--link</a>
+
+     <h4 class="muted">Small buttons</h4>
+     <p class="h4">
+       You can also add <code>.btn--s</code> for smaller buttons.
+     </p>
+     <a href="#!" class="w100--s my1 btn btn--s" title="Furtive button example.">.btn</a>
+     <a href="#!" class="w100--s my1 btn--blue btn--s" title="Furtive button example.">.btn--blue.btn--s</a>
+     <a href="#!" class="w100--s my1 btn--green btn--s" title="Furtive button example.">.btn--green.btn--s</a>
+     <a href="#!" class="w100--s my1 btn--red btn--s" title="Furtive button example.">.btn--red.btn--s</a>
+     <a href="#!" class="w100--s my1 btn--gray btn--s" title="Furtive button example.">.btn--gray.btn--s</a>
+     <a href="#!" class="w100--s my1 btn--link btn--s" title="Furtive button example.">.btn--link.btn--s</a>
+   </section>
+   <div class="bg--off-white py2">
+     <section class="measure p2" id="forms">
+       <h3>Forms</h3>
+
+       <p class="h4">
+         Forms are typically a key component for most websites and web applications. As
+         such, Furtive seeks to keep them consistent, coherent, and elegant for all devices.
+       </p>
+
+       <form action="#" role="form" class="my2">
+         <label for="name">Name</label>
+         <input type="text" name="name" id="name" placeholder="Enter your name...">
+         <label for="email">Email</label>
+         <input type="email" name"email" id="email" placeholder="user@example.com">
+         <label for="password">Password</label>
+         <input type="password" name="password" id="password" placeholder="8 characters or more...">
+         <label for="bio">Bio</label>
+         <textarea name="bio" id="bio" rows="3" placeholder="Tell us about yourself..."></textarea>
+         <input type="checkbox" name="newsletter" id="newsletter">
+         <label for="newsletter">Subscribe to our newsletter</label>
+         <input type="submit" value="Create Account" class="btn--blue">
+       </form>
+     </section>
+   </div>
+   <section class="measure p2" id="media-object">
+     <h3>Media Objects</h3>
+
+     <p class="h4">
+       As <a href="http://www.stubbornella.org/content/2010/06/25/the-media-object-saves-hundreds-of-lines-of-code/" title="Media object article by Stubbornella">Stubbornella</a>
+       would say, the media object saves hundreds of lines of code. Furtive is inclined to agree.
+     </p>
+
+     <div class="media py2">
+       <div class="media-figure">
+         <img src="http://www.gravatar.com/avatar/2e52ef263083c77e2a0a24454dc6f369.png" alt="John Otander avatar">
+       </div>
+       <div class="media-body">
+         <h6 class="m0 p0">John Otander</h6>
+         <p class="m0 p0">
+           I think the media objects using <code>flex</code> are pretty rad. The CSS is lightweight, and can be
+           reused all over the place. Everyone's happy.
+         </p>
+         <div class="media py2">
+           <div class="media-figure">
+             <img src="http://www.gravatar.com/avatar/2e52ef263083c77e2a0a24454dc6f369.png" alt="John Otander avatar">
+           </div>
+           <div class="media-body">
+             <h6 class="m0 p0">John Otander</h6>
+             <p class="m0 p0">
+               They even nest. Not bad for about 10 lines of CSS. Now we wait for caniuse to report more favorably
+               for the flex box.
+             </p>
+           </div>
+         </div>
+       </div>
+     </div>
+   </section>
+   <div class="bg--off-white py2">
+     <section class="measure p2" id="tables">
+       <h3>Tables</h3>
+
+       <p class="h4">
+         Tables are responsive, and beautiful, right out of the box.
+       </p>
+
+       <div class="oflow-y--scroll bg--white my2 p2">
+         <table>
+           <thead>
+             <tr>
+               <th>id</th>
+               <th>name</th>
+               <th>twitter</th>
+               <th>email</th>
+               <th>website</th>
+               <th>beer</th>
+             </tr>
+           </thead>
+           <tbody>
+             <tr>
+               <td>1</td>
+               <td>John</td>
+               <td>@4lpine</td>
+               <td>johnotander@gmail.com</td>
+               <td><a href="http://johnotander.com" title="John Otander's website.">johnotander.com</a></td>
+               <td>Fresh Squeezed IPA</td>
+             </tr>
+             <tr>
+               <td>2</td>
+               <td>Ryan</td>
+               <td>@sessynine</td>
+               <td>sessynine@gmail.com</td>
+               <td><a href="http://sessynine.com" title="Ryan Shelton's website.">sessynine.com</a></td>
+               <td>Coors Light</td>
+             </tr>
+           </tbody>
+         </table>
+       </div>
+     </section>
+   </div>
+   <section class="measure p2" id="colors">
+     <h3>Colors</h3>
+
+     <p class="h4">
+       Inspiration is drawn from <a href="http://clrs.cc" title="Colors.css website">colors.css</a> and
+       <a href="http://getbootstrap.com" title="Bootstrap website">bootstrap</a> to provide helper classes
+       and variables.
+     </p>
+
+     <h4 class="muted" id="background-color">Backgrounds</h4>
+     <p class="h4">
+       There's an assortment of background colors that can be used for flash messages,
+       table headings... anything.
+     </p>
+     <div class="bg--white p2">.bg--white</div>
+     <div class="bg--off-white p2">.bg--off-white</div>
+     <div class="bg--light-gray p2">.bg--light-gray</div>
+     <div class="bg--mid-gray p2 fnt--white">.bg--mid-gray</div>
+     <div class="bg--dark-gray p2 fnt--white">.bg--dark-gray</div>
+     <div class="bg--red p2">.bg--red</div>
+     <div class="bg--orange p2">.bg--orange</div>
+     <div class="bg--blue p2">.bg--blue</div>
+     <div class="bg--green p2">.bg--green</div>
+
+     <h4 class="muted" id="borders">Borders</h4>
+
+     <p class="h4">
+       There are a few border classes to take advantage of in order to frame content.
+     </p>
+
+     <div class="brdr--off-white p1 my1">.brdr--off-white</div>
+     <div class="brdr--light-gray p1 my1">.brdr--light-gray</div>
+     <div class="brdr--mid-gray p1 my1">.brdr--mid-gray</div>
+     <div class="brdr--dark-gray p1 my1">.brdr--dark-gray</div>
+
+     <h4 class="muted" id="text-color">Text Colors</h4>
+       <p class="h4">
+         You can also modify the text color.
+       </p>
+       <span class="fnt--white bg--light-gray">.fnt--white</span>
+       <span class="fnt--off-white bg--light-gray">.fnt--off-white</span> <br>
+       <span class="fnt--light-gray">.fnt--light-gray</span>
+       <span class="fnt--mid-gray">.fnt--mid-gray</span>
+       <span class="fnt--dark-gray">.fnt--dark-gray</span>
+       <span class="fnt--red">.fnt--red</span>
+       <span class="fnt--orange">.fnt--orange</span>
+       <span class="fnt--blue">.fnt--blue</span>
+       <span class="fnt--green">.fnt--green</span>
+   </section>
+   <div class="bg--off-white py2">
+     <section class="measure p2" id="lists">
+       <h3>Lists</h3>
+
+       <p class="h4">
+         Simple, elegant, and nearly raw HTML. Some things don't really need to change.
+       </p>
+
+       <h4 class="muted">Ordered</h4>
+       <ol>
+         <li>Apples</li>
+         <li>Bananas</li>
+         <li>Oranges</li>
+       </ol>
+
+       <h4 class="muted">Unordered</h4>
+       <ul>
+         <li>Apples</li>
+         <li>Bananas</li>
+         <li>Citrus</li>
+         <ul>
+           <li>Limes</li>
+           <li>Oranges</li>
+           <li>Grapefruit</li>
+         </ul>
+       </ul>
+
+       <h4 class="muted">Unstyled</h4>
+       <ul class="list--unstyled">
+         <li>Apples</li>
+         <li>Bananas</li>
+         <li>Oranges</li>
+       </ul>
+     </section>
+   </div>
+   <section class="measure p2" id="utilities">
+     <h3>Utilities</h3>
+
+     <p class="h4">
+       There's a collection of utility classes for modifying the interface.
+     </p>
+
+     <h4 class="muted">Padding</h4>
+     <div class="p0 my1 brdr--light-gray">.p0</div>
+     <div class="p1 my1 brdr--light-gray">.p1</div>
+     <div class="p2 my1 brdr--light-gray">.p2</div>
+     <div class="py1 my1 brdr--light-gray">.py1</div>
+     <div class="py2 my1 brdr--light-gray">.py2</div>
+     <div class="px1 my1 brdr--light-gray">.px1</div>
+     <div class="px2 my1 brdr--light-gray">.px2</div>
+
+     <h4 class="muted">Margin</h4>
+     <div class="m0 p1 brdr--light-gray">.m0</div>
+     <div class="m1 p1 brdr--light-gray">.m1</div>
+     <div class="m2 p1 brdr--light-gray">.m2</div>
+     <div class="my1 p1 brdr--light-gray">.my1</div>
+     <div class="my2 p1 brdr--light-gray">.my2</div>
+     <div class="mx1 p1 brdr--light-gray">.mx1</div>
+     <div class="mx2 p1 brdr--light-gray">.mx2</div>
+
+     <h4 class="muted" id="floats">Floats</h4>
+     <dl>
+       <dt>Float Left</dt>
+       <dd><code>.flt--left</code></dd>
+       <dt>Float Right</dt>
+       <dd><code>.flt--right</code></dd>
+       <dt>Float None</dt>
+       <dd><code>.flt--none</code></dd>
+     </dl>
+
+     <h4 class="muted" id="text-alignment">Text Alignment</h4>
+     <div class="p2 my1 txt--left bg--off-white">.txt--left</div>
+     <div class="p2 my1 txt--right bg--off-white">.txt--right</div>
+     <div class="p2 my1 txt--center bg--off-white">.txt--center</div>
+   </section>
+   <div class="bg--off-white py2">
+     <section class="measure p2" id="type">
+       <h3>Type</h3>
+       <p class="h4">
+         The typography is minimal, and full of contrast. Not to mention, all the key components
+         are based on Scss variables that can be changed to give a custom look and feel.
+       </p>
+       <h4 class="muted">Utilities</h4>
+       <p class="h4">
+         In order to ensure that you can modify type styling on the fly,
+         there are <span class="italic">italics</span>, <span class="thin">thin</span>,
+         <span class="bold">bold</span>, <span class="caps">caps</span>, and
+         <span class="small">small</span>, <span class="muted">muted</span>,
+         <code>code</code> classes.
+       </p>
+       <h4 class="muted" id="headings">Headings</h4>
+       <p class="h4">
+         There are also heading classes available the represent heading styles. This results
+         in semantic HTML that still has the styling that you are looking for.
+       </p>
+       <p>
+         <span class="h1">.h1</span>
+         <span class="h2">.h2</span>
+         <span class="h3">.h3</span>
+         <span class="h4">.h4</span>
+         <span class="h5">.h5</span>
+         <span class="h6">.h6</span>
+       </p>
+     </section>
+   </div>
+   <div class="p2 measure">
+     <div class="py2">
+       <h4 class="h2">Installing Furtive</h4>
+       <code>$ npm install --save furtive</code> <br>
+       <code>$ bower install --save furtive</code> <br>
+       <code>$ git clone <a href="https://github.com/johnotander/furtive">https://github.com/johnotander/furtive</a></code>
+     </div>
+   </div>
+   <footer class="txt--center p2">
+     <p class="small p2">
+       Crafted with &lt;3 by <a href="http://johnotander.com" title="John Otander's website">John Otander</a>
+       (<a href="https://twitter.com/4lpine" title="John Otander on Twitter (@4lpine)">@4lpine</a>). <br>
+       &lt;/&gt; available on <a href="https://github.com/johnotander/furtive" title="Furtive source code">Github</a>.
+     </p>
+   </footer>
+   
+    <!-- End Document
+      –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script type="text/javascript" src="app.bundle.js?28280ef6220421dace23"></script></body>
 </html>
