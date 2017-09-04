@@ -1,6 +1,10 @@
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 var ExtractTextPlugin = require("extract-text-webpack-plugin");
+var PurifyCSSPlugin = require('purifycss-webpack');
 var path = require("path");
+var glob = require('glob');
+var glob = require('glob-all');
+
 
 module.exports = {
     entry: './src/app.js',
@@ -39,6 +43,10 @@ module.exports = {
             filename: 'app.css',
             disable: false,
             allChunks: true
-        })
+        }),
+        new PurifyCSSPlugin({
+      // Give paths to parse for rules. These should be absolute!
+      paths: glob.sync(path.join(__dirname, 'src/*.html')),
+    })
     ]
 }
