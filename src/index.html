@@ -3,8 +3,19 @@
   <head>
     <meta charset="UTF-8">
     <title><%= htmlWebpackPlugin.options.title %></title>
+    <style>
+.lazyload,
+.lazyloading {
+	opacity: 0;
+}
+.lazyloaded {
+	opacity: .3;
+	transition: opacity 300ms;
+}
+</style>
   </head>
   <body>
+    <img class="lazyload" data-src=<%=require("./icon.jpg") %> />
 
       <!-- Primary Page Layout
       –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -450,7 +461,7 @@
        &lt;/&gt; available on <a href="https://github.com/johnotander/furtive" title="Furtive source code">Github</a>.
      </p>
    </footer>
-   
+
     <!-- End Document
       –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   </body>

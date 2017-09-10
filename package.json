@@ -13,8 +13,10 @@
   "devDependencies": {
     "css-loader": "^0.26.1",
     "extract-text-webpack-plugin": "^2.0.0-rc.0",
+    "file-loader": "^0.11.2",
     "glob": "^7.1.2",
     "html-webpack-plugin": "^2.26.0",
+    "image-webpack-loader": "^3.4.2",
     "node-sass": "^4.4.0",
     "purify-css": "^1.2.5",
     "purifycss-webpack": "^0.7.0",
@@ -26,7 +28,6 @@
   "dependencies": {
     "glob-all": "^3.1.0",
     "lazysizes": "^4.0.0-rc3",
-    "lodash": "^4.17.4",
-    "zepto": "^1.2.0"
+    "lodash": "^4.17.4"
   }
 }

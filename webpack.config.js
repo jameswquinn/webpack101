@@ -21,7 +21,14 @@ module.exports = {
                     loader: ['css-loader','sass-loader'],
                     publicPath: '/dist'
                 })
-            }
+            },
+            {
+              test: /\.(png|svg|jpg|gif)$/,
+              use: [
+                 'file-loader?name=images/[name].[ext]',
+                 'image-webpack-loader?bypassOnDebug'
+               ]
+          }
         ]
     },
     devServer: {
